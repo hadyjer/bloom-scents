@@ -39,7 +39,7 @@
         }
 
         .cart-box {
-            position: 30px;
+            position: fixed;
             top: 20px;
             right: 20px;
             background: #fff;
