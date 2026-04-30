@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Scents - Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #400A16;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Bloom Scents</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container py-5">
+
+        <div class="text-center mb-5">
+            <h1 class="brand-title">Discover Your Signature Scent</h1>
+            <p class="text-muted">
+                Crafted for every identity, Bloom Scents blends timeless notes with modern expression.
+                Each fragrance evolves on your skin — from fresh first impressions to deep, lasting memories.
+            </p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card product-card p-3">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" class="img-fluid rounded">
+                    <h5 class="mt-3">Velvet Rose</h5>
+
+                    <p class="small text-muted">
+                        Romantic, soft, timeless.<br>
+                        Notes: Rose, Peony, White Musk<br>
+                        Perfect for: Daily wear & special moments
+                    </p>
+                    <select class="form-select mb-2" onchange="updatePrice(this, 'price1')">
+                        <option value="15000">50ml - UGX 15,000</option>
+                        <option value="22000">75ml - UGX 22,000</option>
+                        <option value="30000">100ml - UGX 30,000</option>
+                    </select>
+
+                    <p id="price1">UGX 15,000</p>
+
+                    <button class="btn btn-custom w-100"
+                        onclick="addToCart('Velvet Rose', this.previousElementSibling.previousElementSibling.value)">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card product-card p-3">
+                    <img src="images/perfume (3).jpg" class="img-fluid rounded">
+                    <h5 class="mt-3">Amber Oud</h5>
+
+                    <p class="small text-muted">
+                        Rich, bold, captivating.<br>
+                        Notes: Amber, Oud, Vanilla<br>
+                        Perfect for: Evenings & luxury presence
+                    </p>
+
+                    <select class="form-select mb-2" onchange="updatePrice(this, 'price2')">
+                        <option value="18000">50ml - UGX 18,000</option>
+                        <option value="25000">75ml - UGX 25,000</option>
+                        <option value="35000">100ml - UGX 35,000</option>
+                    </select>
+
+                    <p id="price2">UGX 18,000</p>
+
+                    <button class="btn btn-custom w-100"
+                        onclick="addToCart('Amber Oud', this.previousElementSibling.previousElementSibling.value)">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card product-card p-3">
+                    <img src="images/perfume (8).jpg" class="img-fluid rounded">
+                    <h5 class="mt-3">Golden Vanilla</h5>
+
+                    <p class="small text-muted">
+                        Warm, sweet, addictive.<br>
+                        Notes: Vanilla, Amber, Tonka Bean<br>
+                        Perfect for: Night & cozy moods
+                    </p>
+
+                    <select class="form-select mb-2" onchange="updatePrice(this, 'price3')">
+                        <option value="16000">50ml - UGX 16,000</option>
+                        <option value="23000">75ml - UGX 23,000</option>
+                        <option value="32000">100ml - UGX 32,000</option>
+                    </select>
+
+                    <p id="price3">UGX 16,000</p>
+
+                    <button class="btn btn-custom w-100"
+                        onclick="addToCart('Golden Vanilla', this.previousElementSibling.previousElementSibling.value)">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card product-card p-3">
+                    <img src="images/perfume (11).jpg" class="img-fluid rounded">
+                    <h5 class="mt-3">Midnight Oud</h5>
+
+                    <p class="small text-muted">
+                        Deep, woody, luxurious.<br>
+                        Notes: Oud, Sandalwood, Musk<br>
+                        Perfect for: Evening & signature scent
+                    </p>
+
+                    <select class="form-select mb-2" onchange="updatePrice(this, 'price4')">
+                        <option value="20000">50ml - UGX 20,000</option>
+                        <option value="28000">75ml - UGX 28,000</option>
+                        <option value="40000">100ml - UGX 40,000</option>
+                    </select>
+
+                    <p id="price4">UGX 20,000</p>
+
+                    <button class="btn btn-custom w-100"
+                        onclick="addToCart('Midnight Oud', this.previousElementSibling.previousElementSibling.value)">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card product-card p-3">
+                    <img src="images/perfume (10).jpg" class="img-fluid rounded">
+                    <h5 class="mt-3">Citrus Bloom</h5>
+
+                    <p class="small text-muted">
+                        Fresh, vibrant, energizing.<br>
+                        Notes: Lemon, Bergamot, Green Tea<br>
+                        Perfect for: Daytime & summer wear
+                    </p>
+
+                    <select class="form-select mb-2" onchange="updatePrice(this, 'price5')">
+                        <option value="14000">50ml - UGX 14,000</option>
+                        <option value="20000">75ml - UGX 20,000</option>
+                        <option value="28000">100ml - UGX 28,000</option>
+                    </select>
+
+                    <p id="price5">UGX 14,000</p>
+
+                    <button class="btn btn-custom w-100"
+                        onclick="addToCart('Citrus Bloom', this.previousElementSibling.previousElementSibling.value)">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="card product-card p-3">
+                    <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de" class="img-fluid rounded">
+                    <h5 class="mt-3">Floral Noir</h5>
+
+                    <p class="small text-muted">
+                        Soft but mysterious.<br>
+                        Notes: Rose, Jasmine, Patchouli<br>
+                        Perfect for: Elegant everyday wear
+                    </p>
+
+                    <select class="form-select mb-2" onchange="updatePrice(this, 'price6')">
+                        <option value="15000">50ml - UGX 15,000</option>
+                        <option value="22000">75ml - UGX 22,000</option>
+                        <option value="30000">100ml - UGX 30,000</option>
+                    </select>
+
+                    <p id="price6">UGX 15,000</p>
+
+                    <button class="btn btn-custom w-100"
+                        onclick="addToCart('Floral Noir', this.previousElementSibling.previousElementSibling.value)">Add
+                        to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="container mt-5">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h6> Long-lasting formulas</h6>
+      <p class="small text-muted">High-quality oils designed to last all day</p>
+    </div>
+    <div class="col-md-4">
+      <h6> Unisex fragrances</h6>
+      <p class="small text-muted">Designed for every identity and mood</p>
+    </div>
+    <div class="col-md-4">
+      <h6> Easy ordering</h6>
+      <p class="small text-muted">Order instantly via WhatsApp</p>
+    </div>
+  </div>
+</div>
+
+    <!-- Cart Box -->
+    <div class="cart-box" id="cart">
+        <h6>Cart</h6>
+        <ul id="cartItems" class="small"></ul>
+        <p><strong>Total: UGX <span id="total">0</span></strong></p>
+        <button class="btn btn-success w-100" onclick="checkout()">Order via WhatsApp</button>
+    </div><!-- Floating WhatsApp -->
+    <div class="floating-icons">
+        <a href="#" class="whatsapp" onclick="checkout()">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+     <footer class="footer">
+
+        <div class="footer-info">
+            <b style="color: white;">Quick Links</b>
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-info">
+            <b style="color: white;">Socials</b>
+            <a href="https://snapchat.com/add/yourusername" target="_blank"><i class="fab fa-snapchat-ghost"></i>
+                Snapchat</a>
+            <a href="https://facebook.com/@yourusername" target="_blank"><i class="fa-brands fa-facebook"></i>
+                Facebook</a>
+            <a href="https://instagram.com/@yourusername" target="_blank"><i class="fab fa-instagram"></i>
+                Instagram</a>
+            <a href="https://tiktok.com/@yourusername" target="_blank"><i class="fab fa-tiktok"></i> Tiktok</a>
+        </div>
+
+        <div class="footer-info">
+            <b style="color: white;">Contact Info</b>
+            <a href="tel:+256700000000" target="_blank" class="phone"><i class="fas fa-phone"></i> Call Us</a>
+            <a href="mailto:bloomscents@gmail.com" target="_blank" class="email"><i class="fas fa-envelope"></i>
+                Email</a>
+            <a href="https://wa.me/256700000000" target="_blank" class="whatsap"><i class="fab fa-whatsapp"></i>
+                WhatsApp</a>
+            <a href="https://www.google.com/maps?q=Kampala+Uganda" target="_blank"><i
+                    class="fa-solid fa-location-dot"></i> Kampala (U)</a>
+        </div>
+
+    </footer>
+    <script>
+        let cart = [];
+
+        function updatePrice(select, priceId) {
+            document.getElementById(priceId).innerText = 'UGX ' + Number(select.value).toLocaleString();
+        }
+
+        function addToCart(name, price) {
+            cart.push({ name, price: Number(price) });
+            renderCart();
+        }
+
+        function renderCart() {
+            let list = document.getElementById('cartItems');
+            let total = 0;
+            list.innerHTML = '';
+
+            cart.forEach(item => {
+                total += item.price;
+                list.innerHTML += `<li>${item.name} - UGX ${item.price.toLocaleString()}</li>`;
+            });
+
+            document.getElementById('total').innerText = total.toLocaleString();
+        }
+
+        function checkout() {
+            if (cart.length === 0) return alert('Cart is empty');
+
+            let message = 'Hello, I want to order:%0A';
+            cart.forEach(item => {
+                message += `- ${item.name} (UGX ${item.price})%0A`;
+            });
+
+            let total = cart.reduce((sum, item) => sum + item.price, 0);
+            message += `%0ATotal: UGX ${total}`;
+
+            window.open(`https://wa.me/256700000000?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+
+</html>

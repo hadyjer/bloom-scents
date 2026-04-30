@@ -1,0 +1,117 @@
+body {
+    background-color: #f8f5f2;
+     font-family: Arial, sans-serif;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-title {
+    color: #5a0f2e;
+    /* maroon */
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #5a0f2e;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-custom:hover {
+    background-color: #3e0a20;
+}
+
+.form-control:focus {
+    border-color: #5a0f2e;
+    box-shadow: 0 0 0 0.2rem rgba(90, 15, 46, 0.25);
+}
+
+/* Floating Icons */
+.floating-icons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.floating-icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.floating-icons a:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.email {
+    background-color: #6c757d;
+}
+
+.phone {
+    background-color: #5a0f2e;
+}
+
+ /* footer tag */
+ footer {
+     background-color: #400A16;
+     padding: 20px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+
+ .footer-info {
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     font-size: 20px;
+ }
+
+
+
+ .footer-info a {
+     transition: 0.3s ease;
+     text-decoration: none;
+     color: #908f8f;
+     font-size: 15px;
+ }
+
+ .footer-info a:hover {
+     color: #c1576e;
+ }
+
+ .note {
+     background-color: #022033;
+     color: #ffffff;
+ }
+
+ a {
+     color: #e0e0e0;
+ }

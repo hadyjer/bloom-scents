@@ -1,0 +1,65 @@
+ body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: url(images/bloom.png) no-repeat center center/cover;
+            height: 90vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .section-title {
+            margin-bottom: 30px;
+        }
+        
+         .card img{
+            height: 220px;
+            object-fit: cover;
+         }
+       
+         /* footer tag */
+ footer {
+     background-color: #400A16;
+     padding: 20px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+
+ .footer-info {
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+     font-size: 20px;
+ }
+
+
+
+ .footer-info a {
+     transition: 0.3s ease;
+     text-decoration: none;
+     color: #908f8f;
+     font-size: 15px;
+ }
+
+ .footer-info a:hover {
+     color: #c1576e;
+ }
+
+ .note {
+     background-color: #022033;
+     color: #ffffff;
+ }
+
+ a {
+     color: #e0e0e0;
+ }
