@@ -75,6 +75,17 @@ body {
     background-color: #5a0f2e;
 }
 
+.location-image{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.3s ease;
+}
+
+.location-image:hover{
+    transform: scale(1.02);
+}
  /* footer tag */
  footer {
      background-color: #400A16;
